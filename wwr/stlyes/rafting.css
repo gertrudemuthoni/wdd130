@@ -1,175 +1,118 @@
 :root{
-    --rafting-blue: #264653;
-    --rafting-blue-light: #2A9D8F;
-    --rafting-yellow: #E9C46A; 
-    --rafting-red: #F4A261; 
+    --primary-color: #1d495b00;
+    --secondary-color: #2A9D8F;
+    --accent1-color: #1dcfa0; 
+    --accent2-color: #F4A261; 
+    --heading-font: 'Montserrat', sans-serif ;    
+    --body-font: 'Roboto', sans-serif;   
 }
-body {
-    max-width: 1000px;   
-    margin: 0 auto; 
-    font-family: 'open sans', sans-serif;   
-}   
 
+/* Style the hader bar*/
+header {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: white
+
+}
+
+/*style logo*/
+header img { 
+    height: 100px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+body {
+    font-family: var(--body-font);    
+    color: var(--accent1-color)
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
 
 h1, h2 {
-    color: var(--rafting-blue);
-    font-size: 2rem; 
-    font-family: 'open sans', sans-serif;       
-} 
-
-h2 {
-    text-align: center  ;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-p{
-    color: black;
-    font-size: 1.2rem;       
-} 
-
-.sociallinks a{
-    color: var(--rafting-blue);
-    text-decoration: none;           
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
 }
 
-.logo{
-    width: 70px; 
-    height: 70px; 
-    margin-left: 50px;  
+.socialmedia a {
+    text-decoration: none;
 }
 
-.hero{
-    position: relative; 
+.hero {
+    position: relative;
 }
-.hero img{
+
+.hero img {
     display: block;
     width: 100%;
-    height: auto;   
+    height: auto;
 }
 
-.hero-text{
-    position: absolute; 
-    top:10px; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: white; 
-    
-}   
-
-.hero-text h1{
+h1 {
     position: absolute;
-    top: -35px;
-    left: -1px;
-    width: 600px;   
+    top: 15px;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    opacity: 0.6;
+    background-color: var(--accent1-color);
+    color: rgb(43, 118, 24);
 }
 
-.hero-text article{
-    position: absolute; 
-    top: 80px;   
-    left: -300px;
-    width: 600px;
-    display: flex;
-    margin: 0 auto ;
-    padding: 20px;  
-    flex-direction: row-reverse;  
-    align-items: center ; 
-    justify-content: space-between; 
-    background-color: rgb(220, 204, 204);
-    opacity: 0.8;  
-}
-
-header{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 100px;
-    margin-bottom: 10px;  
-}
-
-nav ul{
-    display: flex;   
-    margin-right: 20px;
-    align-items: center ;
-    font-size: 1.2rem;  
-}
-
-li{
-    list-style: none;
-    width: 130px;
-    border: 1px solid black;  
-    text-align: center  ;
-} 
-
-li a{
-    text-decoration: none; 
-    color: black; 
+.hero article img {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    max-width: 170px;
+    height: auto;
     
-}   
-
-
-.hero-text img{
-    width: 150px;
-    height: 120px;
 }
 
-footer{
-    display: flex; 
-    background-color: var(--rafting-blue);
-    color: white; 
-    align-items: center ;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 0 auto;      
-} 
-
-footer p{
-    margin-left: 30px;
-    text-align: center  ;
+.hero article p {
+    font-size: 16px;
+    line-height: 1.5;
+    top: 70%;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-90%);
 }
-.sociallinks {
-    display: flex;
-
-}
-
-.sociallinks img{
-    width: 30px; 
-    height: 30px; 
-    margin: 0 10px; 
-} 
-
-.history-container{
-    background-color: var(--rafting-blue-light);
-    margin-bottom: 20px;    
-}
-
-
-.history{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    align-items: center ;
-    gap: 10px; 
-    margin-top: -40px; 
-    padding: 20px;   
-    border-radius: 10px; 
-}  
-
-.history img{
-    width: 300px;     
-    height: auto; 
-    border-radius: 10px; 
-}
-
-.gallery{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    gap: 10px; 
-    margin-top: 20px; 
-    padding: 20px; 
-    background-color: var(--rafting-blue-light); 
-    border-radius: 10px; 
-}   
-
-.gallery img{
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-}   
