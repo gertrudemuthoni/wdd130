@@ -44,7 +44,6 @@ nav a {
     text-decoration: none;
     color: var(--secondary-color);
     transition: background-color 0.3s ease;
-    font-family: var(--body-font);
     font-size: 16px;
     font-weight: 600;
 }
@@ -70,7 +69,6 @@ nav ul li:hover {
 
 body {
     font-family: var(--body-font);    
-    color: var(--primary-color)
 }
 
 header, main, footer {
@@ -81,7 +79,7 @@ header, main, footer {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
-    text-align: center;
+    
     font-size: 2em;
     
 }
