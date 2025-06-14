@@ -14,7 +14,17 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     background-color: var(--accent2-color);
+    width: 1000px;
+    margin: 0 auto;
+}
 
+header h1 {
+    grid-column: 2;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    text-align: center;
 }
 
 /*style logo*/
@@ -29,7 +39,7 @@ header img {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 25px;
+    box-sizing: border-box;
 }
 nav {
     display: flex;
@@ -76,10 +86,11 @@ header, main, footer {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
-    
+    margin-bottom: 20px;
+    text-align: center;
     font-size: 2em;
     
 }
@@ -87,7 +98,9 @@ h1, h2 {
 nav, section, article {
     margin: 16px;
     padding: 8px;
-    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
 }
 
 
@@ -125,6 +138,25 @@ nav, section, article {
     border-radius: 5px;
 }
 
+.contact_form{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border: 1px solid var(--secondary-color);
+}
+
+.contact_form{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border: 1px solid var(--secondary-color);
+}
 
 
 .socialmedia a {
@@ -133,6 +165,11 @@ nav, section, article {
 
 .hero {
     position: relative;
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    border: none;
 }
 
 .hero img {
@@ -241,7 +278,24 @@ h1 {
     color: var(--secondary-color);
 }
 
-footer {
+.map iframe{
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.employess {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+}
+
+.footer {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
     padding: 20px;
