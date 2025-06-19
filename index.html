@@ -1,50 +1,104 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Gertrude Muthoni | WDD 130</title>
-        <meta name="description" content="Gertrude Muthoni's BYU-Idaho WDD 130 course home page">
-        <meta name="author" content="Gertrude Muthoni">
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="#">Home</a>
-                <a href="wwr/">Rafting Site Plan</a>
-                <a href="wwr/site-plan-rafting">Rafting Site Plan</a>
-                <a href="www.linkedin.com/in/gertrude-muthoni-685b952b3">LinkedIn Profile</a>
-                <a href="https://facebook.com ">Facebook Webpage</a>
-            </nav>
-        </header>
-        <main>
-            <h1>Gertrude Muthoni | WDD 130</h1>
-            <img src="images/profile.webp" alt="Hello, my name is Gertrude Muthoni" width="200">
-            <p>My name is Gertrude Muthoni from Nairobi, Kenya. I enjoy 
-                hiking and traveling in my leisure time. I am currently pursuing
-                Software Development at BYU-Idaho with the hope of successfuly completing
-                my course and seeking employment in a big Tech company. I do aspire to become
-                part of hte world's growing innovation sector, to leave a mark and inspire
-                millions of young African girls that through the Gospel of Jesus Christ,
-                hardwork, persistence and dedication, the potential is unlimited.</p>
-            <ul class="box">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/anchorage-alaska-temple" target="_blank">Anchorage Alaska Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/albuquerque-new-mexico-temple" target="_blank">Albuquerque New Mexico Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/atlanta-georgia-temple" target="_blank">Atlanta Georgia Temple</a></li>
-        
-            </ul>
-        </main>
-            <aside class="box">
-                <h2> Nairobi, Kenya</h2>
-                <img src="images/nairobitemple.webp" alt="This is the new Nairobi Temple">
-                <p> This is the newly built Kenya, Nairobi Temple. Nairobi is 
-                    the capital city of Kenya, located in East Africa. It is 
-                    the only capital city in the world with a national park.</p>
-            
-            </aside>
-        <footer>
-            <p>&copy;2024 👩‍🎓 Gertrude Muthoni 👩‍🎓 Nairobi, Kenya</p>
-        </footer>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Quest For Adventure">
+    <meta name="author" content="Gertrude Muthoni"> 
+    <title>Quest For Adventure | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/rafting.css">    
+</head>
+
+<body>
+    
+    
+    <header>
+    <img src="./images/logo.webp" alt="Rafting Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+     </nav>       
+    </header>
+    
+    
+    <main>      
+    <section class="hero-home">
+        <img src="./images/rafting.webp" alt="Background Picture">        
+        <h1>Quest For Adventure!</h1>
+    </section>
+    
+    <section class="newsletter-signup">
+        <h2>Sign Up for Our Newsletter!</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="user_message" required></textarea>
+            </div>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="cta-trips">
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>Explore our thrilling white water rafting trips and find the perfect journey for you!</p>
+        <a href="trips.html" class="button">View All Trips</a>  
+    </section>
+    <section class="home-grid-content">
+        <div class="grid-item">
+            <img src="./images/grid-experience.webp" alt="Rafters enjoying the experience">
+            <h3>Unforgettable Experiences</h3>
+            <p>At Quest For Adventure, we specialize in creating exhilarating and safe rafting experiences for all skill levels. From gentle floats to heart-pounding rapids, discover the perfect trip for your group.</p> 
+        </div>
+        <div class="grid-item">
+            <img src="./images/grid-safety.webp" alt="Safety First">
+            <h3>Safety First</h3>
+            <p>Your safety is our top priority. Our experienced guides are trained to ensure a safe and enjoyable experience on the water, so you can focus on the thrill of the adventure.</p> 
+        </div>
+        <div class="grid-item">
+            <img src="./images/grid-nature.webp" alt="Nature">
+            <h3>Connect with Nature</h3>
+            <p>Experience the beauty of nature like never before. Our rafting trips take you through stunning landscapes, allowing you to connect with the great outdoors in a unique way.</p>
+        </div>
+        <div class="grid-item">
+            <img src="./images/grid-team.webp" alt="Team of happy rafters">
+            <h3>Build Lasting Memories</h3>
+            <p>Whether you're with friends, family, or colleagues, our rafting adventures create lasting memories. Share the excitement and bond over the thrill of conquering the rapids together.</p> 
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 | Quest For Adventure | Gertrude Muthoni</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb-icon.webp" alt="Facebook">
+            </a>
+            <a href="https://X.com" target="_blank">
+                <img src="images/x-icon.webp" alt="X">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/ig-logo.webp" alt="instagram">
+            </a>
+        </nav>
+       
+    </footer>
+</body>
 </html>
+    <!--https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51  -->
+    
